@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding-top: 40px; /* Espacio para la barra de navegación fija */
+    padding-bottom: 100px; /* Espacio para el pie de página fijo */
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+
+footer {
+    background-color: #858585;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1030; /* Asegura que el footer esté por encima de otros elementos */
+}
+footer p {
+    margin: 0;
+}
+
+footer a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+
+.navbar-toggler {
+    background-color: rgb(114, 114, 114);
+}
+.navbar {
+    background-color: #858585;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.v1 {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.v2, .v3 {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Ajustar según sea necesario */
+}
+
+.card-img-top {
+    background-color: rgb(151, 151, 151); /* Área roja para la imagen */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+}
+
+.card-body {
+    background-color: rgb(41, 41, 41); /* Área azul para la descripción */
+    color: rgb(231, 231, 231);
+    padding: 10px;
+    text-align: center;
+}
+
+.lesion-img {
+    height: 300px;
+    width: 400px;
+    display: block; /* Asegúrate de que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+h3 {
+    margin-top: 40px; /* Espacio superior para los subtítulos */
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px; /* Espacio superior para los subtítulos */
+    margin-bottom: 10px;
+}
+
+.bg-left {
+    background: url('./images/Logo.png') no-repeat center center;
+    background-size: contain;
+    color: black;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+    z-index: -1;
+}
+
+.bg-left h1, .bg-left p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para mejorar la legibilidad */
+    position: relative;
+    z-index: 2;
+}
+
+a {
+    color: #333;
+}
+
+.bg-gray {
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    padding: 15px; /* Espaciado interno opcional */
+    border-radius: 10px; /* Esquinas redondeadas opcionales */
+}
